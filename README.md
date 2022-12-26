@@ -1,24 +1,35 @@
+
 ## Introduction
 
+<div align="center">
+<img src="experiment/images/iitkgp.png" width="10%">
+</div>
 
-<b>Discipline | <b>Fill your discipline name here
+### About the Experiment
+<b>Discipline | <b> Mechanical Engineering 
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b> **Kinematics and Dynamics of Mechanisms**
+<b> Experiment|     <b> **Simple Drawing Board and Experiment 1**
 
-### About the Experiment 
 
-Fill a brief description of this experiment here
+### Subject Matter Expert 
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+<!--Fill a brief description of this experiment here-->
+
+<b>Name of Developer | <b> **Dr. Kingshook Bhattacharyya**
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Institute | <b>  **Indian Institute of Technology Kharagpur**
+<b> Email id|     <b>  **king@mech.iitkgp.ernet.in**
+<b> Department |  **Department of Mechanical Engineering**
+<b>Webpage| <b> [http://www.iitkgp.ac.in/department/ME/faculty/me-king](http://www.iitkgp.ac.in/cv/me-king)
+
 
 ### Contributors List
 
-SrNo | Name | Faculty or Student | Department| Institute | Email id
+SrNo | Name | VLabs Developer or Integration Engineer | Designation | Department| Institute
 :--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
-2 | . | . | . | . | .
+1 | **Mitrajit Samanta** | Developer and Integration | Senior Project Officer | Department of Mechanical Engineering | IIT Kharagpur | 
+2 | **Pabitra Kumar Jana** | Developer and Integration | Senior Project Officer | Department of Mechanical Engineering | IIT Kharagpur | 
+3 | **Sujata Madke** | Integration | Research Engineer | Department of Mechanical Engineering | IIT Kharagpur | 
+4 | **Prakriti Dhang** | Integration | Project Scientist | Department of Mechanical Engineering | IIT Kharagpur |
+
