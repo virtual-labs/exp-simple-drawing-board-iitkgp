@@ -1,0 +1,16 @@
+{
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "An engineering drawing is used to specify the geometry necessary for the construction of a component.",
+        "answers": {
+          "a": "True",
+          "b": "False"
+          
+          
+        },
+        
+        "correctAnswer": "a",
+        "difficulty": "beginner"
+      }]
+    }

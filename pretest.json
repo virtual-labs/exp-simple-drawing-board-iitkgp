@@ -1,0 +1,16 @@
+{
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "Engineering drawing is a graphical language that communicates ideas and information from one mind to another.",
+        "answers": {
+          "a": "True",
+          "b": "False"
+          
+          
+        },
+        
+        "correctAnswer": "a",
+        "difficulty": "beginner"
+      }]
+    }
