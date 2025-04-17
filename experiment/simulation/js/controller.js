@@ -493,4 +493,19 @@ jQ(document).ready(function () {
     });
 });
 
+function downloadCanvas() {
+    const canvas = document.querySelector('#canvas2d-view canvas');
+    if (!canvas) {
+        alert("No canvas found!");
+        return;
+    }
+
+    const image = canvas.toDataURL("image/png");
+    const link = document.createElement('a');
+    link.download = 'drawing.png';
+    link.href = image;
+    link.click();
+}
+
+
 
