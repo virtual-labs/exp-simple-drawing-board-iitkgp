@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script language="JavaScript" type="text/javascript">
+function myFunction() {
+
+//    var l1 = document.getElementById("ground").value;
+    var l2 = document.getElementById("crank").value;
+    var l3 = document.getElementById("coupler_offset").value;
+    var l4 = document.getElementById("slider_offset").value;
+    var theta21 = document.getElementById("crank_limit_1").value;
+    var theta22 = document.getElementById("crank_limit_2").value;
+    var l11 = document.getElementById("slider_limit_1").value;
+    var l12 = document.getElementById("slider_limit_2").value;
+       
+	var theta21_ = Math.asin(l4/(l2+l3))*180.0/Math.PI;
+	var theta22_ = 180.0-Math.asin(-l4/(l2-l3))*180.0/Math.PI;
+	var l11_  = (l2+l3)*Math.cos(theta21_*Math.PI/180.0);
+	var l12_  = -(l2-l3)*Math.cos(theta22_*Math.PI/180.0);
+
+   
+	var err_th21 = (Math.abs((theta21_ - theta21) / theta21_) * 100);
+	var err_th22 = (Math.abs((theta22_ - theta22) / theta22_) * 100);
+	var err_l11 = (Math.abs((l11_ - l11) / l11_) * 100);
+	var err_l12 = (Math.abs((l12_ - l12) / l12_) * 100);
+
+
+	document.getElementById("error_th21").innerHTML = " Crank  Limit 1: " + theta21_ + " degrees,  Error = "+err_th21+" %";
+	document.getElementById("error_l11").innerHTML = " Slider Limit 1: " + l11_ +     "        ,  Error = "+err_l11+" %";
+	document.getElementById("error_th22").innerHTML = " Crank  Limit 2: " + theta22_ + " degrees,  Error = "+err_th22+" %";
+	document.getElementById("error_l12").innerHTML = " Slider Limit 2: " + l12_ +     "        ,  Error = "+err_l12+" %";
+
+}
+</script>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.style2 {font-family: Verdana, Arial, Helvetica, sans-serif}
+-->
+</style>
+</head>
+<body>
+<label></label>
+<label><span class="style1">Validate Graphical Analysis for Limits of Slider</span><span class="style2"><br />
+<!--Link Length 1 (Ground) :
+<input id="ground" type="number">
+<br />
+-->Link Length 2 (Crank) :
+<input type="number" id="crank" />
+<br />
+</span></label>
+<span class="style2">
+<label>Link Length 3 (Coupler offset) :
+<input type="number" id="coupler_offset" />
+</label>
+<label><br />
+Link Length 4 (Slider offset) :
+<input type="number" id="slider_offset" />
+</label>
+<label><br />
+<br />
+Limit 1 for theta 2 (degrees): :
+<input type="number" id="crank_limit_1" />
+</label>
+<label><br />
+<label>
+Slider displacement at theta 2 (limit 1)
+<input type="number" id="slider_limit_1" />
+<br />
+Limit 2 for theta 2 (degrees): :
+<input type="number" id="crank_limit_2" />
+</label>
+<label><br />
+</label>
+<label>
+Slider displacement at theta 2 (limit 2)
+<input type="number" id="slider_limit_2" />
+</label>
+<br />
+<label></label><label></label>
+<input name="submit" type="submit" id="Submit" onclick="myFunction()" value="Check"/>
+</span>
+<p id="error_th21"></p>
+<p id="error_l11"></p>
+<p id="error_th22"></p>
+<p id="error_l12"></p>
+</body>
+</html>
